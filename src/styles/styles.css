@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+
+}
+
+header *{
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin-top: -100px;
+}
+
+header, header::before{
+    background: 50% 50% / cover;
+}
+
+header::before{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url("../images/1074016.jpg");
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.product-detail {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.imagery {
+    flex: 1 1 60%;
+    width: 60%;
+    padding: 50px 100px;
+    background-color: #212121;
+    transition: 0.4s;
+}
+.imagery img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+    animation: fadein 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.detail {
+    flex: 1 1 40%;
+    width: 40%;
+    padding: 50px;
+    background-color: #EEEEEE;
+}
+
+.detail h1 {
+    color: #212121;
+    font-size: 32px;
+    font-weight: 900;
+}
+.detail h2 {
+    color: #53565A;
+    font-size: 22px;
+    font-weight: 700;
+}
+.detail h3 {
+    color: #53565A;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.btn_grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.btn_grid .btn_wrap {
+    flex: 1 1 50%;
+    width: 50%;
+    padding: 15px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+
+    appearance: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #EEE;
+
+    color: #313131;
+    font-size: 20px;
+    font-weight: 700;
+
+    transition: 0.4s;
+}
+button:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.size {
+    position: relative;
+    z-index: 1;
+}
+button.size::before,
+button.size::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    transition: 0.4s;
+}
+button.size::after {
+    z-index: -1;
+    background-color: #FFF;
+    border: 3px solid #EEE;
+}
+button.size::before {
+    z-index: -2;
+    background-image: linear-gradient(to right, #ED008D, #8D00ED);
+}
+button.size.selected::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.colours .btn_wrap .black.selected {
+    background-color: #212121;
+    color: #FFF;
+}
+
+.colours .btn_wrap .blue.selected {
+    background-color: #2484E4;
+    color: #FFF;
+}
+
+.colours .btn_wrap .red.selected {
+    background-color: #AF1E2D;
+    color: #FFF;
+}
+
+.colours .btn_wrap .yellow.selected {
+    background-color: #FFCE00;
+    color: #212121;
+}
+
+.colours .btn_wrap .coral.selected {
+    background-color: #FF6C37;
+    color: #FFF;
+}
+
+.colours .btn_wrap .white.selected {
+    background-color: #EEE;
+    color: #212121;
+}
+
+.submit {
+    margin-top: 50px;
+    background-image: linear-gradient(to right, transparent 50%, #ED008D 50%, #8D00ED 100%);
+    background-size: 200%;
+    background-position: 0% 50%;
+    transition: 0.8s;
+}
+.submit:hover {
+    color: #FFF;
+    background-position: 100% 50%;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+.trans_header{
+    top: 0;
+    height: 70px;
+    background: rgba(38, 38, 38, 0.5);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo{
+    display: inline-flex;
+    width: 30px;
+    float: left;
+    line-height: 70px;
+}
+
+.logo_img{
+    width: 125%;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 48px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+nav{
+    float: right;
+    line-height: 70px;
+}
+
+nav a{
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    margin: 0 20px;
+    color: #fff;
+}
+
+
+
