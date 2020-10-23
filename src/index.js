@@ -1,6 +1,3 @@
-import "/styles/styles.css";
-import Image from "./images/1074016.jpg";
-
 (function() {
     const colour_btn_els = document.querySelectorAll('.colours .colour');
     const capacity_btn_els = document.querySelectorAll('.capacity .size');
@@ -22,7 +19,7 @@ import Image from "./images/1074016.jpg";
         btn.addEventListener('click', function () {
             document.querySelector('.colours .colour.selected').classList.remove('selected');
             this.classList.add('selected');
-            image_el.src = "src/images/xr-" + this.dataset.name + '.png';
+            image_el.src = "images/xr-" + this.dataset.name + '.png';
             imagery_el.style.backgroundColor = this.dataset.colour;
         });
     }
