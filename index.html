@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>Product Detail</title>
 
 </head>
 <body>
 <!--Header-->
 <div class="logo">
-    <img src="images/Apple_logo_white.svg" class="logo_img" alt="Apple logo">
+    <img alt="Apple logo" class="logo_img" src="images/Apple_logo_white.svg">
     <a href="#">Apple</a>
 </div>
 <div class="trans_header">
@@ -38,7 +38,7 @@
     <section class="product-detail">
         <!--Image-->
         <div class="imagery">
-            <img src="images/xr-black.png" alt="iPhone XR" class="image"/>
+            <img alt="iPhone XR" class="image" src="images/xr-black.png"/>
         </div>
         <!--Detail-->
         <div class="detail">
@@ -60,41 +60,90 @@
                 <h2>Colours</h2>
                 <ul class="colours btn_grid">
                     <li class="btn_wrap">
-                        <button type="button" class="colour blue" data-name="blue" data-colour="#2484E4">
+                        <button class="colour blue" data-colour="#2484E4" data-name="blue" type="button">
                             Blue
                         </button>
                     </li>
                     <li class="btn_wrap">
-                        <button type="button" class="colour red" data-name="red" data-colour="#AF1E2D">
+                        <button class="colour red" data-colour="#AF1E2D" data-name="red" type="button">
                             Red
                         </button>
                     </li>
                     <li class="btn_wrap">
-                        <button type="button" class="colour yellow" data-name="yellow" data-colour="#FFCE00">
+                        <button class="colour yellow" data-colour="#FFCE00" data-name="yellow" type="button">
                             Yellow
                         </button>
                     </li>
                     <li class="btn_wrap">
-                        <button type="button" class="colour coral" data-name="coral" data-colour="#FF6C37">
+                        <button class="colour coral" data-colour="#FF6C37" data-name="coral" type="button">
                             Coral
                         </button>
                     </li>
                     <li class="btn_wrap">
-                        <button type="button" class="colour white" data-name="white" data-colour="#EEEEEE">
+                        <button class="colour white" data-colour="#EEEEEE" data-name="white" type="button">
                             White
                         </button>
                     </li>
                     <li class="btn_wrap">
-                        <button type="button" class="colour black selected" data-name="black" data-colour="#212121">
+                        <button class="colour black selected" data-colour="#212121" data-name="black" type="button">
                             Black
                         </button>
                     </li>
                 </ul>
-                <button type="submit" class="submit">ADD TO BASKET</button>
+                <button class="submit" type="submit">ADD TO BASKET</button>
             </div>
         </div>
     </section>
 
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>
+                    About us</h2>
+                <div class="content">
+                    <p>
+                        Apple Inc. is an American multinational technology company headquartered in Cupertino,
+                        California, that designs, develops and sells consumer electronics,
+                        computer software, and online services.
+                        Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne
+                        in April 1976 to develop and sell Wozniak's Apple. </p>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>
+                    Address</h2>
+                <div class="content">
+                    <div class="place">
+
+                        <span class="text">Birendranagar, Surkhet</span>
+                    </div>
+                    <div class="phone">
+                        <span class="text">+089-765432100</span>
+                    </div>
+                    <div class="email">
+
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>
+                    Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="text">
+                            Message *
+                        </div>
+                        <label for=".msgForm"></label><textarea cols="25" id=".msgForm" required rows="2"></textarea>
+                        <br/>
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 </main>
 <script src="index.js"></script>
 </body>
