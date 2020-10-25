@@ -245,13 +245,13 @@ button.size.selected::after {
 
     margin-left: 15px;
     display: inline-flex;
-    width: 30px;
+    width: 175px;
     float: left;
     line-height: 70px;
 }
 
 .logo_img{
-    width: 125%;
+    width: 100%;
 }
 
 .logo a {
@@ -277,12 +277,17 @@ nav a{
 
 @media screen and (max-width: 1023px) {
     .logo{
-        width: 25px;
+        width: 150px;
         line-height: 60px;
     }
 
     .logo a{
         font-size: 28px;
+    }
+
+    .logo_img{
+        width: 60%;
+        padding-top: 10px;
     }
 
     nav {
@@ -463,8 +468,6 @@ footer{
     transition: 0.3s;
     cursor: pointer;
 }
-
-
 
 .center .content .fas:hover{
     background: #7B00A2;
