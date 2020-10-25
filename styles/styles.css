@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Staatliches', cursive;
 }
 
 html {
@@ -68,6 +67,10 @@ body {
     display: flex;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .imagery {
     flex: 1 1 60%;
     width: 60%;
@@ -101,6 +104,7 @@ body {
     color: #53565A;
     font-size: 22px;
     font-weight: 700;
+    text-align: center;
 }
 .detail h3 {
     color: #53565A;
@@ -224,6 +228,7 @@ button.size.selected::after {
     margin: 0 auto;
 }
 .trans_header{
+    display: flex;
     top: 0;
     height: 70px;
     background: rgba(38, 38, 38, 0.5);
@@ -269,6 +274,101 @@ nav a{
     color: #fff;
 }
 
+@media screen and (max-width: 1023px) {
+    .logo{
+        width: 25px;
+        line-height: 60px;
+    }
 
+    .logo a{
+        font-size: 28px;
+    }
 
+    nav {
+        line-height: 60px;
+    }
 
+    nav a{
+        font-size: 20px;
+    }
+
+    .product-detail{
+        height: 75vh;
+    }
+
+    .trans_header{
+        height: 60px;
+    }
+
+    .detail {
+        padding: 15px;
+        height: 100%;
+    }
+
+    .detail h1{
+        font-size: 26px;
+        margin: 0.1em 0;
+    }
+
+    .detail h3{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .detail h2{
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 17px;
+        padding: 7px;
+    }
+
+    .imagery{
+        height: 100%;
+        padding: 30px 30px;
+    }
+
+    .submit{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .trans_header {
+        height: fit-content;
+    }
+
+    .banner-container h1 {
+        margin-top: 150px;
+    }
+
+    nav a {
+        border-top: solid;
+        border-radius: 16px;
+        border-top-color: #53565A;
+        border-top-width: thin;
+        font-size: 28px;
+    }
+
+    .imagery {
+        padding: 20px 20px;
+    }
+
+    .btn_grid .btn_wrap {
+        padding: 5px;
+    }
+
+    .detail h2 {
+        margin: 15px;
+    }
+
+}
