@@ -394,6 +394,31 @@ nav a {
 
 }
 
+@media screen and (max-width: 482px) {
+    .product-detail{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .detail {
+        width: 100%;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    .imagery {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-container h1 {
+        margin-top: 250px;
+    }
+
+}
+
 
 /*Footer*/
 .content1 {
