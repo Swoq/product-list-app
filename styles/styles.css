@@ -207,11 +207,12 @@ button.size.selected::after {
 }
 
 .submit {
-    margin-top: 50px;
+    margin-top: 40px;
     background-image: linear-gradient(to right, transparent 50%, #ED008D 50%, #8D00ED 100%);
     background-size: 200%;
     background-position: 0 50%;
     transition: 0.8s;
+
 }
 .submit:hover {
     color: #FFF;
@@ -398,11 +399,12 @@ nav a{
     color: #202020;
 }
 footer{
-    background-image: url("../images/1074016.jpg"); ;
-    padding-top: 20px;
+    /*background-image: url("../images/1074016.jpg");*/
+    padding-top: 30px;
+    background: #212121;
     position: fixed;
     width: 100%;
-
+    font-size: 15px;
 }
 .main-content{
     display: flex;
@@ -411,9 +413,10 @@ footer{
     padding: 10px 20px;
 }
 .box h2{
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: #656565;
 }
 .box .content{
     margin: 20px 0 0 0;
@@ -437,6 +440,7 @@ footer{
 }
 .left .content p{
     text-align: justify;
+    color: #656565;
 }
 .left .content .social{
     margin: 20px 0 0 0;
@@ -469,16 +473,17 @@ footer{
     cursor: pointer;
 }
 
+.center .content{
+    color: #656565;
+}
+
 .center .content .fas:hover{
     background: #7B00A2;
 }
 .center .content .text{
-    font-size: 1.0625rem;
+    font-size: 0.9rem;
     font-weight: 500;
     padding-left: 10px;
-}
-.center .content .phone{
-
 }
 .right form .text{
     font-size: 1.0625rem;
