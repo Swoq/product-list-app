@@ -96,13 +96,13 @@ ul {
     background-color: #EEEEEE;
 }
 
-.detail h1 {
+.detail .title {
     color: #212121;
     font-size: 32px;
     font-weight: 900;
 }
 
-.detail h2 {
+.detail .options {
     color: #53565A;
     font-size: 22px;
     font-weight: 700;
@@ -326,7 +326,7 @@ nav a {
         height: 100%;
     }
 
-    .detail h1 {
+    .detail .title {
         font-size: 26px;
         margin: 0.1em 0;
     }
@@ -336,7 +336,7 @@ nav a {
         margin-bottom: 15px;
     }
 
-    .detail h2 {
+    .detail .options {
         font-size: 20px;
     }
 
@@ -388,7 +388,7 @@ nav a {
         padding: 5px;
     }
 
-    .detail h2 {
+    .detail .options {
         margin: 15px;
     }
 
