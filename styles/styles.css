@@ -63,7 +63,7 @@ body {
 
 .product-detail {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     display: flex;
 }
 
@@ -237,12 +237,7 @@ button.size.selected::after {
     }
 }
 
-.wrapper {
-    width: 1170px;
-    margin: 0 auto;
-}
-
-.trans_header {
+.c_header {
     display: flex;
     top: 0;
     height: 70px;
@@ -279,6 +274,7 @@ button.size.selected::after {
 nav {
     float: right;
     line-height: 70px;
+    margin-left: auto;
 }
 
 nav a {
@@ -314,10 +310,10 @@ nav a {
     }
 
     .product-detail {
-        height: 75vh;
+        height: 80vh;
     }
 
-    .trans_header {
+    .c_header {
         height: 60px;
     }
 
@@ -351,7 +347,7 @@ nav a {
     }
 
     .submit {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 }
 
@@ -364,7 +360,7 @@ nav a {
         text-align: center;
     }
 
-    .trans_header {
+    .c_header {
         height: fit-content;
     }
 
@@ -395,6 +391,7 @@ nav a {
 }
 
 @media screen and (max-width: 482px) {
+
     .product-detail{
         flex-direction: column;
         height: fit-content;
