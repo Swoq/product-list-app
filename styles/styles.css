@@ -63,7 +63,7 @@ body {
 
 .product-detail {
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     display: flex;
 }
 
@@ -215,7 +215,7 @@ button.size.selected::after {
 }
 
 .submit {
-    margin-top: 40px;
+    margin-top: 15vh;
     background-image: linear-gradient(to right, transparent 50%, #ED008D 50%, #8D00ED 100%);
     background-size: 200%;
     background-position: 0 50%;
@@ -310,7 +310,7 @@ nav a {
     }
 
     .product-detail {
-        height: 80vh;
+        height: 75vh;
     }
 
     .c_header {
@@ -347,7 +347,7 @@ nav a {
     }
 
     .submit {
-        margin-top: 30px;
+        margin-top: 10vh;
     }
 }
 
