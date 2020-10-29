@@ -103,6 +103,7 @@ ul {
 }
 
 .detail .options {
+    margin: 10px;
     color: #53565A;
     font-size: 22px;
     font-weight: 700;
@@ -215,7 +216,7 @@ button.size.selected::after {
 }
 
 .submit {
-    margin-top: 15vh;
+    margin-top: 4vh;
     background-image: linear-gradient(to right, transparent 50%, #ED008D 50%, #8D00ED 100%);
     background-size: 200%;
     background-position: 0 50%;
@@ -347,7 +348,7 @@ nav a {
     }
 
     .submit {
-        margin-top: 10vh;
+        margin-top: 1vh;
     }
 }
 
