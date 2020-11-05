@@ -395,7 +395,7 @@ nav a {
 
     .product-detail{
         flex-direction: column;
-        height: fit-content;
+        height: auto;
     }
 
     .detail {
